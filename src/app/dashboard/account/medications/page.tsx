@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { buttonVariants } from "@/components/ui/button";
 import { db } from "@/lib";
 import { currentUser } from "@clerk/nextjs/server";

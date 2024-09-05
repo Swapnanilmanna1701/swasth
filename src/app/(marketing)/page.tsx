@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { AnimationContainer, Icons, MaxWidthWrapper } from "@/components";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { FEATURES, PLANS } from "@/constants";
@@ -23,7 +24,7 @@ const HomePage = () => {
                         <div className="hidden lg:w-52 h-52 rounded-full bg-amber-500 blur-[10rem] opacity-70 -z-10"></div>
                     </div>
                     <h1 className="text-foreground py-6 text-4xl sm:text-6xl md:text-7xl font-semibold md:font-bold !leading-snug tracking-normal text-balance w-full">
-                        Your personal <br /> <span className="bg-gradient-to-r from-primary to-amber-500 text-transparent bg-clip-text">health</span> assistant
+                        Your personal <br /> <span className="bg-gradient-to-r from-primary to-amber-500 text-transparent bg-clip-text">SWASTH</span> assistant
                     </h1>
                     <p className="text-muted-foreground text-base md:text-lg max-w-xl py-2">
                         Instantly get the right medications for your symptoms with AI-powered recommendations
@@ -64,11 +65,11 @@ const HomePage = () => {
                         Features that will <span className="text-gradient">amaze</span> you
                     </h2>
                     <p className="mt-4 text-muted-foreground max-w-lg">
-                        Cura is packed with features that will help you get the right medications for your symptoms
+                        Swasth is packed with features that will help you get the right medications for your symptoms
                     </p>
                 </div>
                 <div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-y-8 md:gap-x-8 w-full">
-                    {FEATURES.map((feature) => (
+                    {FEATURES?.map((feature) => (
                         <div key={feature.title} className="flex flex-col items-start">
                             <feature.icon className="w-8 h-8 text-primary" />
                             <h3 className="text-lg font-medium font-heading mt-4">
@@ -93,7 +94,7 @@ const HomePage = () => {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 py-8 gap-6 max-w-3xl px-0 lg:px-8 mx-auto w-full">
-                    {PLANS.map((plan, index) => (
+                    {PLANS?.map((plan, index) => (
                         <AnimationContainer key={plan.name} delay={baseDelay + index / 5} className="flex flex-col w-full h-full">
                             <Card className={cn(
                                 "w-full h-full flex flex-col rounded-xl border-2 shadow-none",

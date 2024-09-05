@@ -98,7 +98,7 @@ const Footer = () => {
                     </div>
                     <div className="border-t border-neutral-200 mt-10 pt-6 flex items-center justify-between w-full">
                         <p className="text-start text-muted-foreground text-sm">
-                            All rights reserved @{new Date().getFullYear()} Cura
+                            All rights reserved @{new Date().getFullYear()} Swasth
                         </p>
                         <Button size="sm" variant="outline">
                             Feedback

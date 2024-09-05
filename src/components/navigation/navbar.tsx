@@ -17,7 +17,7 @@ const Navbar = ({ user }: Props) => {
                     <div className="flex">
                         <Link href="/" className="flex items-center font-semibold gap-2 text-lg">
                             <Icons.logo className="w-8 h-8" />
-                            Cura
+                            Swasth
                         </Link>
                     </div>
 

@@ -16,7 +16,7 @@ const DashboardLayout = async ({ children }: Props) => {
         redirect("/auth/signin");
     }
 
-    const dbUser = await db.user.findUnique({
+    const dbUser = await db?.user.findUnique({
         where: {
             id: user?.id,
         },

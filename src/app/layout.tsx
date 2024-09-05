@@ -1,10 +1,13 @@
 import { Providers } from "@/components";
+//import { ClerkProvider } from "@clerk/nextjs";
+
 import { Toaster } from "@/components/ui/sonner";
 import { dmSans, inter } from "@/constants";
 import { cn } from "@/lib";
 import "@/styles/globals.css";
 import { generateMetadata } from "@/utils";
 import { DM_Sans } from "next/font/google";
+
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -20,8 +23,7 @@ export default function RootLayout({
             <body
                 className={cn(
                     "min-h-screen bg-background text-foreground !font-heading antialiased",
-                    inter.variable,
-                    dmSans.variable,
+                    font.className,
                 )}
             >
                 <Providers>

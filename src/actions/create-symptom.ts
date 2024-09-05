@@ -2,7 +2,7 @@
 
 import { db } from "@/lib";
 import { currentUser } from "@clerk/nextjs/server";
-import { Frequency, SymptomName } from "@prisma/client";
+import { Frequency, SymptomName } from "@prisma/client/";
 
 interface Props {
     name: SymptomName;

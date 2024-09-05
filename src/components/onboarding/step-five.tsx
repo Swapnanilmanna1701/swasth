@@ -36,7 +36,7 @@ const StepFive = () => {
                     You&apos;re all done!
                 </h2>
                 <p className="text-muted-foreground max-w-lg mt-2">
-                    Congratulations, you&apos;ve completed the onboarding process. Get ready to start your journey to better health with Cura.
+                    Congratulations, you&apos;ve completed the onboarding process. Get ready to start your journey to better health with Swasth.
                 </p>
                 <Link href="/dashboard" className={buttonVariants({ className: "mt-4" })}>
                     Get personalized plan

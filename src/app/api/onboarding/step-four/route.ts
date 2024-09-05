@@ -1,6 +1,6 @@
 import { db, StepFourSchema } from "@/lib";
 import { currentUser } from "@clerk/nextjs/server";
-import { Mood } from "@prisma/client";
+//import { Mood } from "@prisma/client";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 

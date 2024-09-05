@@ -1,23 +1,20 @@
-"use client";
-
-import React from "react"
-import { ClerkProvider } from "@clerk/nextjs"
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { cn } from "@/lib";
+import React from "react";
 
 interface Props {
+    className?: string;
     children: React.ReactNode;
 }
 
-const client = new QueryClient();
-
-const Providers = ({ children }: Props) => {
+const MaxWidthWrapper = ({ className, children }: Props) => {
     return (
-        <QueryClientProvider client={client}>
-            <ClerkProvider>
-                {children}
-            </ClerkProvider>
-        </QueryClientProvider>
-    );
+        <section className={cn(
+            "h-full mx-auto w-full max-w-screen-xl px-4 md:px-12 lg:px-20",
+            className,
+        )}>
+            {children}
+        </section>
+    )
 };
 
-export default Providers
+export default MaxWidthWrapper

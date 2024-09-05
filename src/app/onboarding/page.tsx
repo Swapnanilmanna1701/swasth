@@ -28,7 +28,7 @@ const OnboardingPage = () => {
 
     useEffect(() => {
         router.push(`/onboarding?step=${activeStep}`);
-    }, [activeStep]);
+    }, [activeStep, router]);
 
     const Component = stepComponents[STEPS[activeStep - 1].name];
 
