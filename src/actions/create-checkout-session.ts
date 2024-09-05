@@ -32,7 +32,7 @@ const createCheckoutSession = async () => {
                     price_data: {
                         currency: "usd",
                         product_data: {
-                            name: "Cura Pro Subscription",
+                            name: "Swasth Pro Subscription",
                         },
                         unit_amount: 900,
                     },

@@ -59,7 +59,7 @@
 }
 
 .jhfsd {
-  color: #f97316;
+  color: #407cff;
   color: rgb(6, 182, 212);
   color: rgb(139, 92, 246);
   color: rgb(239, 68, 68);
@@ -98,7 +98,7 @@ image {
 
 .container {
   --uib-size: 45px;
-  --uib-color: #f97316;
+  --uib-color: #407cff;
   --uib-speed: 1.75s;
   --uib-bg-opacity: .1;
   height: 31.25px;

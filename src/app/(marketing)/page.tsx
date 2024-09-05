@@ -178,7 +178,7 @@ const HomePage = () => {
                             Start your journey to better health
                         </h2>
                         <p className="text-muted-foreground max-w-lg mt-4">
-                            Tried of feeling sick? Get started with Cura today and get the right medications for your symptoms
+                            Tried of feeling sick? Get started with Swasth today and get the right medications for your symptoms
                         </p>
                         <Link href="/dashboard" className={buttonVariants({ className: "mt-8" })}>
                             Renew your health
