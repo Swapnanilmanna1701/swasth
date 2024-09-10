@@ -76,7 +76,7 @@ model User {
   clerkId   String  @unique
   email     String  @unique
   firstName String
-  lastName  String
+  lastName  String?
   image     String?
 
   age           Int?

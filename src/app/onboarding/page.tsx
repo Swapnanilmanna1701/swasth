@@ -43,14 +43,14 @@ const OnboardingPage = () => {
                         key={step.id}
                         className={cn(
                             "flex flex-col items-center justify-center md:w-16 relative bg-background z-10",
-                            activeStep === step.id ? "text-primary" : "text-muted-foreground"
+                            activeStep === step.id ? "text-blue-600" : "text-muted-foreground"
                         )}
                     >
                         <div
                             className={cn(
                                 "w-10 h-10 flex items-center justify-center rounded-full text-sm",
-                                activeStep === step.id ? "bg-primary text-white" : "bg-zinc-100",
-                                activeStep > step.id ? "bg-primary text-white" : ""
+                                activeStep === step.id ? "bg-blue-600 text-white" : "bg-zinc-100",
+                                activeStep > step.id ? "bg-blue-600 text-white" : ""
                             )}
                         >
                             {activeStep > step.id ? (

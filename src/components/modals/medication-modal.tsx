@@ -166,7 +166,7 @@ const MedicationModal = () => {
                                                         id={freq}
                                                         className={({ active, checked }) => cn(
                                                             "border-2 border-border rounded-lg w-full py-2 text-center cursor-pointer focus:outline-none ring-0 focus:ring-0 outline-none disabled:opacity-50",
-                                                            (active || checked) && "border-primary",
+                                                            (active || checked) && "border-blue-600",
                                                         )}
                                                     >
                                                         <RadioGroup.Label as="span" htmlFor={freq} className="text-sm !capitalize">
@@ -195,7 +195,7 @@ const MedicationModal = () => {
                                                         id={adhere}
                                                         className={({ active, checked }) => cn(
                                                             "border-2 border-border rounded-lg w-full py-2 text-center cursor-pointer focus:outline-none ring-0 focus:ring-0 outline-none disabled:opacity-50",
-                                                            (active || checked) && "border-primary",
+                                                            (active || checked) && "border-blue-600",
                                                         )}
                                                     >
                                                         <RadioGroup.Label as="span" htmlFor={adhere} className="text-sm !capitalize">
@@ -322,7 +322,7 @@ const MedicationModal = () => {
                                                     id={freq}
                                                     className={({ active, checked }) => cn(
                                                         "border-2 border-border rounded-lg w-full py-2 text-center cursor-pointer focus:outline-none ring-0 focus:ring-0 outline-none disabled:opacity-50",
-                                                        (active || checked) && "border-primary",
+                                                        (active || checked) && "border-blue-600",
                                                     )}
                                                 >
                                                     <RadioGroup.Label as="span" htmlFor={freq} className="text-sm !capitalize">
@@ -351,7 +351,7 @@ const MedicationModal = () => {
                                                     id={adhere}
                                                     className={({ active, checked }) => cn(
                                                         "border-2 border-border rounded-lg w-full py-2 text-center cursor-pointer focus:outline-none ring-0 focus:ring-0 outline-none disabled:opacity-50",
-                                                        (active || checked) && "border-primary",
+                                                        (active || checked) && "border-blue-600",
                                                     )}
                                                 >
                                                     <RadioGroup.Label as="span" htmlFor={adhere} className="text-sm !capitalize">

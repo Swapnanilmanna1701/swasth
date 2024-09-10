@@ -75,7 +75,7 @@ const StepTwo = ({ nextStep }: Props) => {
                                             id={symptom}
                                             className={({ active, checked }) => cn(
                                                 "border-2 border-border rounded-lg w-full py-2 text-center cursor-pointer focus:outline-none ring-0 focus:ring-0 outline-none disabled:opacity-50",
-                                                (active || checked) && "border-primary",
+                                                (active || checked) && "border-blue-600",
                                             )}
                                         >
                                             <RadioGroup.Label as="span" htmlFor={symptom} className="text-sm !capitalize">
@@ -104,7 +104,7 @@ const StepTwo = ({ nextStep }: Props) => {
                                             id={freq}
                                             className={({ active, checked }) => cn(
                                                 "border-2 border-border rounded-lg w-full py-2 text-center cursor-pointer focus:outline-none ring-0 focus:ring-0 outline-none disabled:opacity-50",
-                                                (active || checked) && "border-primary",
+                                                (active || checked) && "border-blue-600",
                                             )}
                                         >
                                             <RadioGroup.Label as="span" htmlFor={freq} className="text-sm !capitalize">
@@ -133,7 +133,7 @@ const StepTwo = ({ nextStep }: Props) => {
                                             value={(index + 1).toString()}
                                             className={({ active, checked }) => cn(
                                                 "border-2 border-border rounded-lg w-full py-2 text-center cursor-pointer focus:outline-none ring-0 focus:ring-0 outline-none disabled:opacity-50",
-                                                (active || checked) && "border-primary",
+                                                (active || checked) && "border-blue-600",
                                             )}
                                         >
                                             <RadioGroup.Label htmlFor={`intensity-${index + 1}`} className="cursor-pointer">

@@ -1,7 +1,11 @@
-import { SignUp } from '@clerk/nextjs'
+import { SignUp } from "@clerk/nextjs";
 
 const SignUpPage = () => {
-  return <SignUp />
-}
+  return (
+    <main className="flex h-screen w-full items-center justify-center">
+      <SignUp />
+    </main>
+  );
+};
 
-export default SignUpPage
+export default SignUpPage;  

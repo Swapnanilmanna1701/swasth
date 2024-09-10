@@ -13,7 +13,7 @@ export const generateMetadata = ({
         {
             rel: "manifest",
             sizes: "512x512",
-            url: "/icons/logo.svg",
+            url: "/icons/logo.png",
         },
     ],
 }: {

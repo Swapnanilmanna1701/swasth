@@ -93,7 +93,7 @@ const ChatBox = ({ isPro, user, symptoms, medications, messages }: Props) => {
 
         scrollToBottom();
 
-        if (isPro === false && messages.length >= 10) {
+        if (isPro === false && messages.length >= 1000) {
             setError("Message limit reached. Please upgrade to pro.");
             toast.error("Message limit reached. Please upgrade to pro.");
             return;
@@ -109,8 +109,8 @@ const ChatBox = ({ isPro, user, symptoms, medications, messages }: Props) => {
 
         try {
             const model = ai.getGenerativeModel({
-                // model: "gemini-1.5-flash"
-                model: "gemini-1.5-pro-exp-0801"
+                 //model: "gemini-1.5-flash",
+                 model: "gemini-1.5-pro-exp-0827"
             });
 
             const promptText = generatePrompt({ symptoms, medications, user });
@@ -168,7 +168,7 @@ const ChatBox = ({ isPro, user, symptoms, medications, messages }: Props) => {
                 <div className="w-full h-full overflow-y-scroll space-y-4 md:p-4 pb-12 flex flex-col flex-1 scrollbar-hide rounded-xl">
                     {!isLoading && !error && msgs?.length === 0 && (
                         <div className="flex flex-col items-center justify-center text-center w-full py-8 h-full">
-                            <BotIcon className="w-10 h-10 text-primary" />
+                            <BotIcon className="w-10 h-10 text-blue-600" />
                             <p className="text-sm text-muted-foreground font-medium mt-2">
                                 Start a conversation with your personal assistant
                             </p>
@@ -184,7 +184,7 @@ const ChatBox = ({ isPro, user, symptoms, medications, messages }: Props) => {
                         >
                             {message.role === "user" ? (
                                 <div className="flex items-end">
-                                    <p className="bg-primary text-white text-sm px-4 py-2 rounded-lg">
+                                    <p className="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg">
                                         {message.content}
                                     </p>
                                 </div>

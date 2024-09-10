@@ -72,8 +72,8 @@ const UserAccount = () => {
                         </>
                     </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={handleSignOut} className="text-destructive hover:!bg-destructive/10 hover:!text-destructive flex items-center gap-2 px-4 py-2 rounded-md">
-                    <LogOutIcon className="w-4 h-4" />
+                <DropdownMenuItem onClick={handleSignOut} className="text-destructive hover:!bg-blue-200 hover:!text-destructive flex items-center gap-2 px-4 py-2 rounded-md">
+                    <LogOutIcon className="w-4 h-4 text-blue-600" />
                     Logout
                 </DropdownMenuItem>
             </DropdownMenuContent>

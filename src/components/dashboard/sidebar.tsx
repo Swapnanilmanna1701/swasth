@@ -43,8 +43,8 @@ const Sidebar = ({ show = true, setIsOpen }: Props) => {
                                     <TooltipTrigger asChild>
                                         <li
                                             className={cn(
-                                                "flex items-start sm:items-center justify-start sm:justify-center rounded-lg text-muted-foreground hover:text-primary hover:bg-neutral-100 transition-all cursor-pointer",
-                                                isActive && "bg-primary/10 text-primary hover:bg-primary/20",
+                                                "flex items-start sm:items-center justify-start sm:justify-center rounded-lg text-muted-foreground hover:text-blue-800 hover:bg-blue-200 transition-all cursor-pointer",
+                                                isActive && "bg-blue-200 text-blue-800 hover:bg-blue-600",
                                                 show ? "w-9 h-9" : "w-full h-auto py-2 px-4",
                                             )}
                                             onClick={() => {

@@ -20,11 +20,11 @@ const HomePage = () => {
             <MaxWidthWrapper className="flex flex-col items-center w-full relative">
                 <div className="flex flex-col items-center justify-center w-full py-20 text-center">
                     <div className="flex items-center justify-center lg:gap-16 w-full absolute top-[15%] left-1/2 -translate-x-1/2 -z-10">
-                        <div className="w-52 h-52 rounded-full bg-orange-500 blur-[10rem] opacity-70 -z-10"></div>
-                        <div className="hidden lg:w-52 h-52 rounded-full bg-amber-500 blur-[10rem] opacity-70 -z-10"></div>
+                        <div className="w-52 h-52 rounded-full bg-blue-500 blur-[10rem] opacity-70 -z-10"></div>
+                        <div className="hidden lg:w-52 h-52 rounded-full bg-blue-500 blur-[10rem] opacity-70 -z-10"></div>
                     </div>
                     <h1 className="text-foreground py-6 text-4xl sm:text-6xl md:text-7xl font-semibold md:font-bold !leading-snug tracking-normal text-balance w-full">
-                        Your personal <br /> <span className="bg-gradient-to-r from-primary to-amber-500 text-transparent bg-clip-text">SWASTH</span> assistant
+                        Your personal <br /> <span className="bg-gradient-to-r from-blue-700 to-blue-500 text-transparent bg-clip-text">SWASTH</span> assistant
                     </h1>
                     <p className="text-muted-foreground text-base md:text-lg max-w-xl py-2">
                         Instantly get the right medications for your symptoms with AI-powered recommendations
@@ -71,7 +71,7 @@ const HomePage = () => {
                 <div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-y-8 md:gap-x-8 w-full">
                     {FEATURES?.map((feature) => (
                         <div key={feature.title} className="flex flex-col items-start">
-                            <feature.icon className="w-8 h-8 text-primary" />
+                            <feature.icon className="w-8 h-8 text-blue-600" />
                             <h3 className="text-lg font-medium font-heading mt-4">
                                 {feature.title}
                             </h3>
@@ -98,7 +98,7 @@ const HomePage = () => {
                         <AnimationContainer key={plan.name} delay={baseDelay + index / 5} className="flex flex-col w-full h-full">
                             <Card className={cn(
                                 "w-full h-full flex flex-col rounded-xl border-2 shadow-none",
-                                plan.name === "Pro" ? "border-primary" : "border-border"
+                                plan.name === "Pro" ? "border-blue-600" : "border-border"
                             )}>
                                 <CardHeader>
                                     <CardTitle className="font-heading">
@@ -121,7 +121,7 @@ const HomePage = () => {
                                                 <CheckIcon
                                                     className={cn(
                                                         "w-5 h-5",
-                                                        plan.name === "Pro" ? "text-primary" : "text-foreground"
+                                                        plan.name === "Pro" ? "text-blue-600" : "text-foreground"
                                                     )}
                                                 />
                                                 <TooltipProvider>
@@ -129,7 +129,7 @@ const HomePage = () => {
                                                         <TooltipTrigger asChild>
                                                             <p className={cn(
                                                                 "text-sm text-muted-foreground",
-                                                                feature.tooltip && "border-b border-dotted border-border cursor-pointer"
+                                                                feature.tooltip && "border-blue-600 border-dotted border-border cursor-pointer"
                                                             )}>
                                                                 {feature.text}
                                                             </p>
